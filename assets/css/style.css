@@ -1,0 +1,279 @@
+body {
+    font-family: Arial;
+}
+
+.section__top {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.section__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+.section__inner {
+    color: white;
+}
+
+.section__inner__toptext {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.section__inner__bottext {
+    text-align: center;
+    font-size: 20px;
+}
+
+.button_details {
+    display: block;
+
+    width: 335px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    border: 0;
+
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: rgb(103, 58, 183);
+    color: white;
+}
+
+.section__statistics .col {
+    text-align: center;
+}
+
+.col_head {
+    font-size: 36px;
+    color: rgb(101, 44, 145);
+}
+
+.col_text {
+    font-size: 18px;
+}
+
+.line {
+    height: 3px;
+    background-color: black;
+}
+
+.section__advantages {
+    text-align: center;
+}
+
+.section__advantages__title {
+    font-size: 28px;
+}
+
+.section__advantages__item_img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+
+.section__service__item_img {
+    width: 50px;
+    height: 50px;
+}
+
+.section__advantages__item_img img,
+.section__service__item_img img {
+    width: 50px;
+    height: 50px;
+}
+
+.section__advantages__item {
+    margin-top: 25px;
+}
+
+.section__advantages__item_title {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section__advantages__item_text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.section__form {
+    background-image: url('../img/bg-form.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__form form {
+    padding: 37.5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section__form input {
+    background: white;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 0 !important;
+    margin: 0 5px;
+}
+
+.form__button {
+    min-width: 230px;
+    color: rgb(82, 46, 146);
+    font-size: 16px !important;
+}
+
+.section__service__title {
+    font-size: 36px;
+}
+
+.section__service__item {
+    margin-top: 25px;
+}
+
+.section__service__item_title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section__service__item_text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.section__service__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section__service__item__text {
+    margin-left: 25px;
+}
+
+.section__service__item__wrapper-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url('../img/bg-img.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+
+.section__service__item__wrapper-img img {
+    width: 60%;
+}
+
+.section__accordion__title {
+    font-size: 36px;
+    text-align: center
+}
+
+.btn-link {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    color: rgb(103, 58, 183);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.cardbody_col_title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cardbody_col_text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer__wrapper__links {
+    padding: 40px 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer__wrapper__links a {
+    margin: 0 10px;
+    color: rgb(140, 140, 140);
+    font-size: 14px;
+}
+
+footer {
+    background: black;
+}
+
+.customUl {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.section__service__item_margin {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 993px) {
+    .card-body .col-lg-4 {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section__form form {
+        flex-direction: column;
+    }
+
+    .section__form input {
+        margin: 5px;
+    }
+
+    .section__service__item__wrapper-img {
+        min-height: 250px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section__inner__toptext {
+        font-size: 32px;
+    }
+
+    .section__inner__bottext {
+        font-size: 18px;
+    }
+
+    .button_details {
+        font-size: 12px;
+        max-width: 335px;
+        width: 100%;
+    }
+
+    .section__service__item__wrapper-img {
+        min-height: 200px;
+    }
+}
