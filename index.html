@@ -14,11 +14,16 @@
 <body>
 
     <section class="section__top container-fluid p-0">
-        <video height="auto" preload="auto" muted loop poster="assets/img/bg.jpg">
+        <video height="auto" autoplay preload="auto" muted loop poster="assets/img/bg.jpg">
             <source src="assets/img/video.mp4" type="video/mp4">
             </source>
         </video>
         <div class="section__background">
+            <div class="section__background__language">
+                <span>RU</span>
+                /
+                <span>ENG</span>
+            </div>
             <div class="section__inner col-lg-8">
                 <div class="section__inner__toptext">
                     Сервис проведения и продвижения
@@ -52,7 +57,7 @@
 
     <div class="container line mt-4"></div>
 
-    <section class="container section__advantages mt-4">
+    <section class="container section__advantages">
         <div class="row justify-content-center">
             <div class="col-lg-5 section__advantages__title">
                 Ключевые преимущества
@@ -103,6 +108,9 @@
     </section>
 
     <section class="container-fluid section__form mt-4">
+        <p class="section__form_title">
+            Проконсультироваться с менеджером о проведении онлайн курса
+        </p>
         <form>
             <input type="text" placeholder="Имя" name="name" id="">
             <input type="text" placeholder="Телефон *" name="phone" id="">
@@ -137,7 +145,6 @@
                     <div class="section__service__item_text">
                         <ul class="customUl">
                             <li>Платформа для просмотра трансляции и хранения записей мероприятия</li>
-                            <li>Модуль партнерского маркетинга</li>
                         </ul>
                     </div>
                 </div>
@@ -174,7 +181,7 @@
     </section>
 
     <section class="section__service container mt-4">
-        <div class="section__service__title">Трансляции на самом высоком уровне</div>
+        <div class="section__service__title">Трансляции в FullHD на самом высоком уровне</div>
         <div class="section__service__items row mt-4">
             <div class="col-lg-6">
                 <div class="section__service__item">
@@ -194,7 +201,7 @@
                 <div class="section__service__item section__service__item_margin">
 
                     <div class="section__service__item__wrapper-img">
-                        <img src="assets/img/1.jpg" alt="">
+                        <img src="assets/img/analitika.jpg" alt="">
                     </div>
 
                 </div>
@@ -239,6 +246,9 @@
     </section>
 
     <section class="container-fluid section__form mt-4">
+        <p class="section__form_title">
+            Проконсультироваться с менеджером о проведении онлайн курса
+        </p>
         <form>
             <input type="text" placeholder="Имя" name="name" id="">
             <input type="text" placeholder="Телефон *" name="phone" id="">
@@ -324,25 +334,37 @@
             </div>
         </div>
     </section>
+
     <section class="accordion section__accordion mt-4" id="accordionExample">
         <div class="section__accordion__title">Как Вы можете воспользоваться
             сервисом DentalLabel</div>
         <div class="container section__accordion__container mt-4">
-            <div class="card">
-                <div class="card-header" id="headingOne">
+            <div class="row">
+                <div class="col-lg-6" id="headingOne">
                     <h5 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        <button class="btn btn-link btn-center" type="button" data-toggle="collapse" data-target="#collapseOne"
                             aria-expanded="true" aria-controls="collapseOne">
                             Лектор/Ассоциация
                         </button>
                     </h5>
                 </div>
+                <div class="col-lg-6" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed btn-center" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Трансляция конгрессов
+                        </button>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="card">
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                     data-parent="#accordionExample">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 card-body__item">
                                 <div class="cardbody_col_title">Стоматологу-лектору</div>
                                 <div class="cardbody_col_text">
                                     <ul class="customUl">
@@ -350,8 +372,9 @@
                                         <li>Собственная площадка по продвижению и продаже собственных курсов</li>
                                     </ul>
                                 </div>
+                                <button class="button_details button_details_accordion mt-4">УЗНАТЬ ОБ УСЛОВИЯХ</button>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 card-body__item card-body__item_border">
                                 <div class="cardbody_col_title">Ассоциации стоматологов</div>
                                 <div class="cardbody_col_text">
                                     <ul class="customUl">
@@ -360,8 +383,9 @@
                                         <li>Создание системы беспрерывного образования для членов ассоциации</li>
                                     </ul>
                                 </div>
+                                <button class="button_details button_details_accordion mt-4">УЗНАТЬ ОБ УСЛОВИЯХ</button>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 card-body__item">
                                 <div class="cardbody_col_title">Производителю материалов</div>
                                 <div class="cardbody_col_text">
                                     <ul class="customUl">
@@ -372,46 +396,65 @@
                                             продукцией</li>
                                     </ul>
                                 </div>
+                                <button class="button_details button_details_accordion mt-4">УЗНАТЬ ОБ УСЛОВИЯХ</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Трансляция конгрессов
-                        </button>
-                    </h5>
-                </div>
+
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        3
-                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum
-                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                        nulla
-                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                        nesciunt
-                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                        labore sustainable VHS.
+                        <div class="row">
+                            <div class="col-lg-4 card-body__item">
+                                <img src="assets/img/016-responsive.svg" alt="responsive">
+                                <div class="cardbody_col_text">
+                                    Проведение трансляции под ключ
+                                </div>
+                            </div>
+                            <div class="col-lg-4 card-body__item card-body__item_border">
+                                <img src="assets/img/camera.svg" alt="responsive">
+                                <div class="cardbody_col_text">
+                                    Многокамерная съёмка
+                                </div>
+                            </div>
+                            <div class="col-lg-4 card-body__item">
+                                <img src="assets/img/technics.svg" alt="responsive">
+                                <div class="cardbody_col_text">
+                                    Технические персонал и оборудование
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4" style="font-size: 14px;">
+                            Специалисты нашей компании обеспечат съемку, запись, трансляцию и техническое сопровождение
+                            вашего мероприятия.
+                        </p>
+                        <button class="button_details button_details_accordion mt-4">УЗНАТЬ ОБ УСЛОВИЯХ</button>
                     </div>
                 </div>
             </div>
     </section>
 
-    <footer class="mt-4">
+    <footer class="mt-4 p-4">
         <div class="container">
-            <div class="footer__wrapper__links">
-                <a href="">О компании</a>
-                <a href="">Юридическая информация</a>
-                <a href="">Политика приватности</a>
-                <a href="">Обработка данных</a>
+            <div class="row">
+                <div class="footer_block col-lg-6">
+                    220036 Республика Беларусь
+
+                    г. Минск, ул. Карла Либкнехта, 66, пом. 21Б, офис 2.
+
+                    ООО «Стомлэйбл»
+
+                    УНП 193277750
+
+                    info@stream-centr.com
+                </div>
+                <div class="footer_block col-lg-6">
+                    <img src="assets/img/footerlogo.png" alt="logo">
+                </div>
             </div>
+
         </div>
     </footer>
 
